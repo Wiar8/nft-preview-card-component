@@ -1,0 +1,16 @@
+@import "./normalize.css";
+
+@import "./variables.css";
+
+body {
+  background-color: var(--c-dark-blue-main);
+  color: var(--c-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
