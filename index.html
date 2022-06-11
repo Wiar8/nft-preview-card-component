@@ -10,34 +10,59 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    <div>
-      <img src="./images/image-equilibrium.jpg" alt="NFT preview" />
-      <div>
-        <h4>Equilibrium #3429</h4>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
+    <main class="wrapper">
+      <div class="nft-card">
+        <img
+          class="nft-preview"
+          src="./images/image-equilibrium.jpg"
+          alt="NFT preview"
+        />
         <div>
-          <div>
-            <img src="./images/icon-ethereum.svg" alt="Ethereum icon" />
-            <p>0.041 ETH</p>
-          </div>
-          <div>
-            <img src="./images/icon-clock.svg" alt="Clock icon" />
-            <p>3 days left</p>
+          <h2>Equilibrium #3429</h2>
+          <p class="nft-description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="nft-data">
+            <div class="data-items">
+              <img
+                class="data-images"
+                src="./images/icon-ethereum.svg"
+                alt="Ethereum icon"
+              />
+              <p class="nft-price">&nbsp; 0.041 ETH</p>
+            </div>
+            <div class="data-items">
+              <img
+                class="data-images"
+                src="./images/icon-clock.svg"
+                alt="Clock icon"
+              />
+              <p class="nft-time">&nbsp; 3 days left</p>
+            </div>
           </div>
         </div>
+
+        <div class="author-data">
+          <img
+            class="avatar-image"
+            src="./images/image-avatar.png"
+            alt="Avatar image"
+          />
+          <p class="author-name">Creation of <span>Jules Wyvern</span></p>
+        </div>
       </div>
-      <br />
-      <div>
-        <img src="./images/image-avatar.png" alt="Avatar image" />
-        <p>Creation of Jules Wyvern</p>
-      </div>
-    </div>
+    </main>
 
     <div class="attribution">
       Challenge by
