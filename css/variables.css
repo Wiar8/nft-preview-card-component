@@ -1,6 +1,7 @@
 :root {
   --c-soft-blue: hsl(215, 51%, 70%);
   --c-cyan: hsl(178, 100%, 50%);
+  --c-cyan-transparent: hsla(178, 100%, 50%, 0.6);
 
   --c-dark-blue-main: hsl(217, 54%, 11%);
   --c-dark-blue-card: hsl(216, 50%, 16%);

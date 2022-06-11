@@ -26,10 +26,46 @@ body {
 }
 
 .nft-preview {
+  cursor: pointer;
   border-radius: 3%;
   width: 320px;
   height: 320px;
   margin: auto;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.active-nft-preview:hover {
+  opacity: 1;
+}
+
+.active-nft-preview {
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 3%;
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  z-index: 20;
+  background-color: var(--c-cyan-transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.active-nft-preview > img {
+  width: 60px;
+  height: 60px;
+}
+
+.nft-name {
+  transition: color 0.3s ease-in-out;
+}
+
+.nft-name:hover {
+  color: var(--c-cyan);
+  cursor: pointer;
 }
 
 .nft-description {
@@ -86,6 +122,12 @@ body {
 
 .author-name > span {
   color: var(--c-white);
+  transition: color 0.3s ease-in-out;
+}
+
+.author-name > span:hover {
+  cursor: pointer;
+  color: var(--c-cyan);
 }
 
 .attribution {
